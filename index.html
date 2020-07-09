@@ -5,6 +5,8 @@
     <title>Teambit - by Alexander Orlov</title>
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <!-- My style -->
     <link rel="stylesheet" href="dist/app.css">
   </head>
@@ -16,7 +18,7 @@
           <img src="img/logo.svg" alt="logo teambit">
         </div>
         <nav>
-          <ul>
+          <ul class="desktop-navigation">
             <li>
               <a href="#">Solutions</a>
             </li>
@@ -30,9 +32,12 @@
               <a href="#">Sign in</a>
             </li>
             <li>
-              <a class="btn" href="#">Sign Up</a>
+              <a class="btn big" href="#">
+                <img src="img/google-logo.svg" alt=""> Sign Up</a>
             </li>
           </ul>
+
+          <span class="mobile-navigation"><i class="fas fa-bars"></i></span>
         </nav>
       </header>
     </div>

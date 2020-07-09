@@ -5,7 +5,6 @@
   box-sizing: border-box;
   outline: none;
 }
-
 body {
   background-color: #fff;
   font-family: 'Roboto', sans-serif;
@@ -19,6 +18,7 @@ body {
     @include clearfix;
   }
 }
+
 ul {
   list-style: none;
   li{
@@ -26,10 +26,17 @@ ul {
       text-decoration: none;
       color: $text_chocolate_color;
       font-size: .9em;
+      padding: 10px;
 
       &.btn {
         @include btn_general_rules;
-        background-color: $big_btn_bg_color;
+
+        img {
+          width: 25px;
+        }
+      }
+      &.btn.big {
+        @include big_btn_rules;
       }
     }
   }

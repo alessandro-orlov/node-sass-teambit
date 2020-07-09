@@ -14,21 +14,23 @@
   color: #fff;
   border-radius: 5px;
 }
+@mixin big_btn_rules {
+  background-color: $light_blue_color;
+  color: #2c4792;
+  padding: 12px;
+}
 @mixin header {
   border-bottom: 1px solid;
   color: $text_chocolate_color;
-  padding:10px 0;
+  padding: 5px 0;
 }
-
 @mixin flex_main {
   display: flex;
   justify-content: space-between;
 }
-
 @mixin float_left {
   float: left;
 }
-
 @mixin fleat_right {
     float: right;
 }

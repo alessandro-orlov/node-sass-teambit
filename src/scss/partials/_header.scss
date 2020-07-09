@@ -2,14 +2,25 @@ header {
   @include header;
   @include flex_main;
   align-items: center;
+  line-height: 50px;
+  img {
+    vertical-align: middle;
+  }
+
   nav {
-    /* nav property*/
     font-weight: bold;
     ul {
       li {
         @include float_left;
-        margin-left:20px;
+        margin-left:10px;
       }
+    }
+    ul.desktop-navigation {
+      display: none;
+    }
+
+    &.mobile-navigation {
+      display: block;
     }
   }
 }

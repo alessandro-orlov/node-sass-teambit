@@ -33,31 +33,63 @@ ul li a {
   text-decoration: none;
   color: #58402c;
   font-size: 0.9em;
+  padding: 10px;
 }
 
 ul li a.btn {
   padding: 10px 15px;
   color: #fff;
   border-radius: 5px;
+}
+
+ul li a.btn img {
+  width: 25px;
+}
+
+ul li a.btn.big {
   background-color: #5b70aa;
+  color: #2c4792;
+  padding: 12px;
 }
 
 header {
   border-bottom: 1px solid;
   color: #58402c;
-  padding: 10px 0;
+  padding: 5px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  line-height: 50px;
+}
+
+header img {
+  vertical-align: middle;
 }
 
 header nav {
-  /* nav property*/
   font-weight: bold;
 }
 
 header nav ul li {
   float: left;
-  margin-left: 20px;
+  margin-left: 10px;
+}
+
+header nav ul.desktop-navigation {
+  display: none;
+}
+
+header nav.mobile-navigation {
+  display: block;
+}
+
+@media all and (min-width: 768px) {
+  header nav ul.desktop-navigation {
+    display: block;
+  }
+
+  header nav .mobile-navigation {
+    display: none;
+  }
 }
 
