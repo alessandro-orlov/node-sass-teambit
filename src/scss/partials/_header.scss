@@ -1,0 +1,15 @@
+header {
+  @include header;
+  @include flex_main;
+  align-items: center;
+  nav {
+    /* nav property*/
+    font-weight: bold;
+    ul {
+      li {
+        @include float_left;
+        margin-left:20px;
+      }
+    }
+  }
+}

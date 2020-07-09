@@ -9,6 +9,7 @@
 
 body {
   background-color: #fff;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -16,5 +17,47 @@ body {
   max-width: 1170px;
   margin: 0 auto;
   color: #58402c;
+}
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #58402c;
+  font-size: 0.9em;
+}
+
+ul li a.btn {
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #5b70aa;
+}
+
+header {
+  border-bottom: 1px solid;
+  color: #58402c;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  /* nav property*/
+  font-weight: bold;
+}
+
+header nav ul li {
+  float: left;
+  margin-left: 20px;
 }
 

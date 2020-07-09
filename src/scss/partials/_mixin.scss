@@ -1,5 +1,34 @@
-@mixin container {
+@mixin container_box {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
+}
+
+@mixin clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}
+@mixin btn_general_rules {
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 5px;
+}
+@mixin header {
+  border-bottom: 1px solid;
+  color: $text_chocolate_color;
+  padding:10px 0;
+}
+
+@mixin flex_main {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin float_left {
+  float: left;
+}
+
+@mixin fleat_right {
+    float: right;
 }
