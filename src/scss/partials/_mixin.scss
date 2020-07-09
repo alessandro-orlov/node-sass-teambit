@@ -1,7 +1,6 @@
 @mixin container_box {
   width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
+  padding: 30px 0;
 }
 
 @mixin clearfix {
@@ -10,19 +9,22 @@
   clear: both;
 }
 @mixin btn_general_rules {
-  padding: 10px 15px;
+  display: inline-block;
+  line-height: 20px;
+  padding: 5px 10px;
   color: #fff;
   border-radius: 5px;
+  background-color: $dark_blue_color;
 }
 @mixin big_btn_rules {
   background-color: $light_blue_color;
   color: #2c4792;
   padding: 12px;
 }
-@mixin header {
-  border-bottom: 1px solid;
+@mixin box_1170 {
+  max-width: 1170px;
+  margin: 0 auto;
   color: $text_chocolate_color;
-  padding: 5px 0;
 }
 @mixin flex_main {
   display: flex;

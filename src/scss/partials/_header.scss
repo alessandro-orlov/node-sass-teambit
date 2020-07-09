@@ -1,12 +1,15 @@
 header {
-  @include header;
-  @include flex_main;
+  @include box_1170;
   align-items: center;
   line-height: 50px;
   img {
     vertical-align: middle;
   }
-
+  .header-top {
+    @include flex_main;
+    border-bottom: 1px solid;
+    padding: 5px 0;
+  }
   nav {
     font-weight: bold;
     ul {
@@ -18,9 +21,33 @@ header {
     ul.desktop-navigation {
       display: none;
     }
-
     &.mobile-navigation {
       display: block;
     }
-  }
-}
+  } // End nav
+  .jambotron {
+
+    .teaser {
+      width: 45%;
+      @include float_left;
+      h1 {
+        font-size: 2.8em;
+        line-height: 1.8em;
+        letter-spacing: 2px;
+      }
+      h2 {
+        font-size: 1.5em;
+        line-height: 35px;
+        margin: 10px 0px 20px 0;
+        font-weight: 500;
+      }
+    }
+    .illustration {
+      width: 55%;
+      @include float_left;
+      img {
+        width: 100%;
+      }
+    }
+  } // End jambotron
+} // End header
