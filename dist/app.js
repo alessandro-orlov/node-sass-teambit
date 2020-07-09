@@ -115,8 +115,8 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\users\alessandro\desktop\main repository backup\Boolean Project\repository\node-sass-teambit\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! C:\users\alessandro\desktop\main repository backup\Boolean Project\repository\node-sass-teambit\src\scss\app.scss */"./src/scss/app.scss");
+__webpack_require__(/*! C:\Users\Alessandro\desktop\main repository backup\Boolean Project\repository\node-sass-teambit\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\Alessandro\desktop\main repository backup\Boolean Project\repository\node-sass-teambit\src\scss\app.scss */"./src/scss/app.scss");
 
 
 /***/ })

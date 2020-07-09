@@ -1,11 +1,6 @@
-/* RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-}
-
-body {
-  background-color: red;
-}
+@import "partials/_variables.scss";
+@import "partials/_mixin.scss";
+@import "partials/_common.scss";
+@import "partials/_header.scss";
+@import "partials/_main.scss";
+@import "partials/_footer.scss";
