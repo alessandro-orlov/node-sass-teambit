@@ -1,0 +1,39 @@
+footer {
+  @include box_1170;
+  @include flex_main;
+  flex-wrap:wrap;
+  min-height: 500px;
+  font-size: 1.1em;
+  line-height: 30px;
+  h3 {
+    font-size: 1.5em;
+  }
+  ul {
+    margin: 20px 0;
+    li {
+      padding: 5px 0;
+    }
+  }
+  .company-desc {
+    width: calc((100% / 12) * 3);
+    .small-logo {
+      padding: 0 10px;
+      width: 15%;
+    }
+    .slogan {
+      padding: 0 10px;
+      width: 85%;
+    }
+  }
+  .products,
+  .about,
+  .connect,
+  .lobs {
+    padding: 30px 10px;
+    flex-grow: 1;
+  }
+  .from-the-blog {
+    padding: 30px 10px;
+    width: calc((100% / 12) * 2);
+  }
+}
