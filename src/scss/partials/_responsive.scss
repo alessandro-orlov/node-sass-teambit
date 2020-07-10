@@ -5,16 +5,54 @@
 
 // ======================= 768px ============================
 @media all and (min-width:768px) {
+  // COMMON
+  body {
+    text-align: left;
+  }
+  // HEADER
   header nav ul.desktop-navigation {
     display: block;
   }
   header nav .mobile-navigation {
     display: none;
   }
-
+  header .jambotron .teaser {
+    width: 45%;
+    float: left;
+  }
+  header .jambotron .illustration {
+    width: 55%;
+    float: left;
+  }
+  // MAIN
   main section.section-info .traditional-processes .illustration-box,
   main section.section-info .teambit-solution .illustration-box {
     width: calc(100% / 3);
+  }
+  main section.section-feedback .illustration {
+    width: 50%;
+  }
+  main section.section-feedback .description {
+    width: 25%;
+  }
+  main section .chat {
+    width: 50%;
+  }
+  // FOOTER
+  footer .company-desc {
+    width: calc((100% / 12) * 3);
+  }
+  footer .products,
+  footer .about,
+  footer .connect,
+  footer .lobs {
+    width: calc(100% / 7);
+    padding: 30px 10px;
+    flex-grow: 1;
+  }
+  footer .from-the-blog {
+    padding: 30px 10px;
+    width: calc((100% / 12) * 2);
   }
 }
 

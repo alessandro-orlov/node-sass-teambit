@@ -28,7 +28,7 @@ header {
   .jambotron {
 
     .teaser {
-      width: 45%;
+      width: 100%;
       @include float_left;
       h1 {
         font-size: 2.8em;
@@ -43,7 +43,7 @@ header {
       }
     }
     .illustration {
-      width: 55%;
+      width: 100%;
       @include float_left;
       img {
         width: 100%;

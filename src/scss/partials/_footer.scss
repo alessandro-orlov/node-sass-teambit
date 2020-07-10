@@ -5,6 +5,7 @@ footer {
   min-height: 500px;
   font-size: 1.1em;
   line-height: 30px;
+  text-align:left;
   h3 {
     font-size: 1.5em;
   }
@@ -15,7 +16,7 @@ footer {
     }
   }
   .company-desc {
-    width: calc((100% / 12) * 3);
+    width: 100%;
     .small-logo {
       padding: 0 10px;
       width: 15%;
@@ -29,11 +30,13 @@ footer {
   .about,
   .connect,
   .lobs {
+    width: calc(100% / 3);
     padding: 30px 10px;
     flex-grow: 1;
   }
   .from-the-blog {
     padding: 30px 10px;
     width: calc((100% / 12) * 2);
+    flex-grow: 6;
   }
 }
