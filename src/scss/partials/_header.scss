@@ -8,7 +8,7 @@ header {
   .header-top {
     @include flex_main;
     border-bottom: 1px solid;
-    padding: 5px 0;
+    padding: 5px 10px;
   }
   nav {
     font-weight: bold;
