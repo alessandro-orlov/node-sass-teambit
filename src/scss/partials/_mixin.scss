@@ -9,12 +9,13 @@
   clear: both;
 }
 @mixin btn_general_rules {
-  display: inline-block;
+  display: block;
   line-height: 20px;
   padding: 5px 10px;
   color: #fff;
   border-radius: 5px;
   background-color: $dark_blue_color;
+  margin: 5px 50px;
 }
 @mixin big_btn_rules {
   background-color: $light_blue_color;
