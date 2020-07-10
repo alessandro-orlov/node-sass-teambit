@@ -21,8 +21,32 @@ header {
     ul.desktop-navigation {
       display: none;
     }
-    &.mobile-navigation {
+    &.bars {
       display: block;
+    }
+    .small-device-menu {
+      .hidden {
+        display: none;
+      }
+    }
+    .mobile-menu {
+      display: none;
+      background: #fff;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      .mobile-navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &.active {
+        display: block;
+      }
+
     }
   } // End nav
   .jambotron {
