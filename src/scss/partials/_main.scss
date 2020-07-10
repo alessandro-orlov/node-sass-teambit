@@ -1,0 +1,62 @@
+main {
+  // SEZIONE 1
+  section {
+    h3 {
+      width: 50%;
+      display: inline-block;
+      font-size: 1.6em;
+      line-height: 45px;
+    }
+    // SECTION INFO
+    &.section-info {
+      background-color: $primary_company_bg;
+      min-height: 100px;
+      text-align: center;
+
+      .traditional-processes,
+      .teambit-solution {
+        @include box_1170;
+        padding: 50px 0;
+      }
+      .illustration-box {
+        @include float_left;
+        padding: 20px;
+        width: 100%;
+        img {
+          height: 130px;
+        }
+        p {
+          padding: 20px 0;
+        }
+      }
+      .teambit-banny img {
+        height:  400px;
+        margin: 40px 0 60px 0;
+      }
+      .teambit-solution {
+        border-top: 1px solid $text_chocolate_color
+      }
+    }
+    // SECTION FEEDBACK
+    &.section-feedback {
+     .fl-box {
+       @include float_left;
+       width: 50%;
+       img {
+         width: 100%;
+       }
+
+     }
+     .fr-box {
+       @include float_right;
+       width: 50%;
+       text-align: right;
+       img {
+         width: 100%;
+       }
+
+      }
+    }
+
+  } // End section
+} // End main

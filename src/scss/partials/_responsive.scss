@@ -11,6 +11,11 @@
   header nav .mobile-navigation {
     display: none;
   }
+
+  main section.section-info .traditional-processes .illustration-box,
+  main section.section-info .teambit-solution .illustration-box {
+    width: calc(100% / 3);
+  }
 }
 
 // ======================= 960px ============================
