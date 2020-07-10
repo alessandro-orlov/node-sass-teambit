@@ -17,6 +17,14 @@ body {
   &:after {
     @include clearfix;
   }
+
+  .fl {
+    @include float_left;
+  }
+
+  .fr {
+    @include float_right;
+  }
 }
 
 ul {
@@ -26,8 +34,6 @@ a {
   text-decoration: none;
   color: $text_chocolate_color;
   font-size: .9em;
-  padding: 10px;
-
 
   &.btn {
     @include btn_general_rules;
