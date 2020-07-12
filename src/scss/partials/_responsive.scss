@@ -16,6 +16,7 @@
   // HEADER
   header .header-top {
     padding: 5px 0;
+    position: relative;
   }
   header nav ul.desktop-navigation {
     display: block;
@@ -38,6 +39,11 @@
   }
   main section.section-feedback .illustration {
     width: 50%;
+  }
+  main section.section-info .teambit-banny img {
+    width: 321px;
+    height: 370px;
+    padding: 0;
   }
   main section.section-feedback .description {
     width: 25%;
