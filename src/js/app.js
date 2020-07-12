@@ -1,7 +1,8 @@
-$(document).ready(function(){
+$(document).ready(function() {
+
   $('.small-device-menu').click(function(){
-    $('.bars').toggleClass('hidden');
+    $('#burger-menu').toggleClass('active');
     $('.mobile-menu').slideToggle('active');
-    $('.close').toggleClass('hidden');
   });
+
 }); // end document ready

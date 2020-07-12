@@ -13,6 +13,7 @@ header {
     width: 100%;
     background: #fff;
     @include flex_main;
+    z-index: 10;
   }
   nav {
     font-weight: bold;
@@ -25,12 +26,60 @@ header {
     ul.desktop-navigation {
       display: none;
     }
-    &.bars {
-      display: block;
-    }
     .small-device-menu {
-      .hidden {
-        display: none;
+      /* BEGIN BURGER MENU */
+      /* Burger button */
+      .burger-menu {
+        line-height: 70px; /* height of header line*/
+        text-align: right;
+        position: relative;
+      }
+      #burger-menu  {
+        background: none;
+        border:none;
+        outline: none;
+        cursor: pointer;
+        height: 20px;
+      }
+      #burger-menu span {
+        display: inline-block;
+        width: 28px;
+        height: 3px;
+        background-color: #444;
+        position: relative;
+        vertical-align: middle;
+        transition: .25s;
+      }
+      #burger-menu span::before {
+        content: '';
+        width: 28px;
+        height: 3px;
+        background-color: #444;
+        position: absolute;
+        top: -7px;
+        left:0;
+        transition: .25s;
+      }
+      #burger-menu span::after {
+        content: '';
+        width: 28px;
+        height: 3px;
+        background-color: #444;
+        position: absolute;
+        top: 7px;
+        left:0;
+        transition: .25s;
+      }
+      #burger-menu.active span {
+        height: 0;
+      }
+      #burger-menu.active span::before {
+        top: 0;
+        transform: rotate(45deg);
+      }
+      #burger-menu.active span::after {
+        top: 0;
+        transform: rotate(-45deg);
       }
     }
     .mobile-menu {
@@ -41,6 +90,7 @@ header {
       position: absolute;
       top: 61px;
       left: 0;
+      border-bottom: 1px solid $text_chocolate_color;
       ul.mobile-navigation {
         // display: flex;
         // flex-direction: column;
@@ -55,13 +105,10 @@ header {
 
           }
         }
-
       }
-
       &.active {
         display: block;
       }
-
     }
   } // End nav
   .jambotron {
