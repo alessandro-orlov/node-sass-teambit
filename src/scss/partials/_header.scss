@@ -86,14 +86,12 @@ header {
       display: none;
       background: #fff;
       width: 100%;
-      height: 40vh;
       position: absolute;
       top: 61px;
       left: 0;
       border-bottom: 1px solid $text_chocolate_color;
       ul.mobile-navigation {
-        // display: flex;
-        // flex-direction: column;
+        margin: 0 0 20px;
         text-align: left;
         li {
           float: none;
